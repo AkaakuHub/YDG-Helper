@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>YDG-Helper Settings</title>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                width: 300px;
+                padding: 10px;
+            }
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="port">ポート番号</label>
+        <input type="number" id="port" min="1" max="65535" />
+        <button id="save">保存</button>
+        <p id="status"></p>
+        <script src="popup.js"></script>
+    </body>
+</html>

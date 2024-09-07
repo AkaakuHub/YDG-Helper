@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "YDG-Helper",
+    "version": "1.0.0",
+    "description": "Send to localhost",
+    "author": "Akaaku",
+    "action": {
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "64": "images/icon64.png",
+            "128": "images/icon128.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://music.youtube.com/*",
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content-script.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting",
+        "tabs"
+    ]
+}

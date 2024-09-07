@@ -1,0 +1,21 @@
+.fetch-url-button {
+    width: 5em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #272727;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #3f3f3f;
+        transition: background-color 0.3s;
+    }
+}
